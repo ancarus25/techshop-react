@@ -7,6 +7,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Navbar/>
         <Routes>
           <Route path='/' />
           <Route path='/cart' />
