@@ -1,12 +1,12 @@
 
 import './App.css';
-import{BrowserRouter as Router, Route, Routes} from 'react-router-dom';
-import {Navbar} from './components/navbar';
-import {Shop} from './pages/shop/shop';
-import {Cart} from './pages/cart/cart'; 
+import{ BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Navbar } from './components/navbar';
+import { Shop } from './pages/shop/shop';
+import { Cart } from './pages/cart/cart'; 
 import { ShopContextProvider } from './context/shop-context';
 
-export const App = () => {
+function App(){
   return (
     <div className="App">
       <ShopContextProvider>
@@ -21,5 +21,6 @@ export const App = () => {
     </div>
   );
 }
+export default App; 
 
 
